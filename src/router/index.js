@@ -3,6 +3,10 @@ import Router from 'vue-router'
 import Login from '@/components/Login'
 import Home from '@/components/Home'
 import List from '@/components/List'
+import Jsgl from '@/components/jsgl'
+import Gngl from '@/components/gngl'
+import Bmgl from '@/components/bmgl'
+import Rygl from '@/components/rygl'
 import Listtext from '@/components/Listtext'
 import Welcome from '@/components/Welcome'
 import calendarplus from '@/components/calendarplus'
@@ -26,6 +30,26 @@ export default new Router({
           path:'/List',
           name:'List',
           component:List
+        },
+        {
+          path:'/jsgl',
+          name:'jsgl',
+          component:Jsgl
+        },
+        {
+          path:'/gngl',
+          name:'gngl',
+          component:Gngl
+        },
+        {
+          path:'/bmgl',
+          name:'bmgl',
+          component:Bmgl
+        },
+        {
+          path:'/rygl',
+          name:'rygl',
+          component:Rygl
         },
         {
           path:'/Listtext',

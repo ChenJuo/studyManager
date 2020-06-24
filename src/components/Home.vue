@@ -12,12 +12,13 @@
             <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" theme="dark">
               <el-menu-item index="1"  @click = "changeRuter"><i class="fa fa-home fa-lg w24"></i>首页</el-menu-item>
               <el-submenu index="2">
-                <template slot="title"><i class="fa fa-user-circle-o fa-lg w24"></i>客户管理</template>
-                <el-menu-item index="2-1" @click = "fn2"><i class="fa fa-user fa-lg w24"></i>我的客户</el-menu-item>
-                <el-menu-item index="2-2" @click = "fn3"><i class="fa fa-user-plus fa-lg w24"></i>新增客户</el-menu-item>
-                <el-menu-item index="2-3" @click = "fn3"><i class="fa fa-users w24"></i>客户回访</el-menu-item>
+                <template slot="title"><i class="fa fa-user-circle-o fa-lg w24"></i>系统管理</template>
+                <el-menu-item index="2-1" @click = "fn2"><i class="fa fa-user fa-lg w24"></i>角色管理</el-menu-item>
+                <el-menu-item index="2-2" @click = "fn3"><i class="fa fa-user fa-lg w24"></i>功能管理</el-menu-item>
+                <el-menu-item index="2-3" @click = "fn4"><i class="fa fa-user-plus fa-lg w24"></i>部门管理</el-menu-item>
+                <el-menu-item index="2-4" @click = "fn5"><i class="fa fa-users w24"></i>人员管理</el-menu-item>
               </el-submenu>
-              <el-submenu index="3">
+              <!--<el-submenu index="3">
                 <template slot="title"><i class="fa fa-edit fa-lg w24"></i>日志信息</template>
                 <el-menu-item index="3-1" @click = "med"><i class="fa fa-file-text-o fa-lg w24"></i>日志模板</el-menu-item>
                 <el-menu-item index="3-2"><i class="fa fa-file-pdf-o fa-lg w24"></i>系统日志</el-menu-item>
@@ -26,7 +27,7 @@
                 <template slot="title"><i class="fa fa-cube fa-lg w24"></i>系统工具</template>
                 <el-menu-item index="4-1" @click = "calendarfn"><i class="fa fa-calendar-plus-o fa-lg w24"></i>系统日历</el-menu-item>
                 <el-menu-item index="4-2" @click = "sendmail"><i class="fa fa-envelope-o fa-lg w24"></i>发送邮件</el-menu-item>
-              </el-submenu>
+              </el-submenu>-->
             </el-menu>
           </el-col>
         </el-row>
@@ -78,10 +79,16 @@ export default {
         alert(1);
       },
       fn2(){
-        this.$router.push('/List');
+        this.$router.push('/jsgl');
       },
       fn3(){
-        this.$router.push('/Listtext');
+        this.$router.push('/gngl');
+      },
+      fn4(){
+        this.$router.push('/bmgl');
+      },
+      fn5(){
+        this.$router.push('/rygl');
       },
       changeRuter(){
         this.$router.push('/Welcome');
