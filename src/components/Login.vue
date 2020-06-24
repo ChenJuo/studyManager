@@ -60,8 +60,8 @@
               debugger
               this.logining = false;
               // NProgress.done();
-              let { msg, code, user } = data;
-              if (code !== 200) {
+              let { msg, status, user } = data;
+              if (status !== 200) {
                 this.$notify({
                   title: '错误',
                   message: msg,
