@@ -1,12 +1,13 @@
 //axios用于提供get数据的一种连接的接口
 import axios from 'axios';
+import qs from 'qs';
 import de from "element-ui/lib/locale/lang/de";
 
 let base = 'http://127.0.0.1:8443/ib';
 
 //发送用户登录信息验证的请求的方法
 export const requestLogin = params => {
-  return axios.post(`${base}/login`, params).then(res => res.data);
+  return axios.post(`${base}/login`, qs.stringify(params)).then(res => res.data);
 };
 
 //获取用户列表的请求的方法
