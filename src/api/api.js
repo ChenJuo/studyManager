@@ -1,7 +1,8 @@
 //axios用于提供get数据的一种连接的接口
 import axios from 'axios';
+import de from "element-ui/lib/locale/lang/de";
 
-let base = '';
+let base = 'localhost:8443/ib';
 
 //发送用户登录信息验证的请求的方法
 export const requestLogin = params => {
