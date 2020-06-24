@@ -18,8 +18,8 @@ import 'vue-event-calendar/dist/style.css'
 import vueEventCalendar from 'vue-event-calendar'
 
 import 'font-awesome/css/font-awesome.min.css'
-import Mock from './mock';
-Mock.bootstrap();
+/*import Mock from './mock';
+Mock.bootstrap();*/
 
 //使用element-ui
 

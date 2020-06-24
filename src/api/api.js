@@ -2,11 +2,11 @@
 import axios from 'axios';
 import de from "element-ui/lib/locale/lang/de";
 
-let base = 'http://0.0.0.0:8443/ib';
+let base = 'http://127.0.0.1:8443/ib';
 
 //发送用户登录信息验证的请求的方法
 export const requestLogin = params => {
-  return axios.post(`/login`, params).then(res => res.data);
+  return axios.post(`${base}/login`, params).then(res => res.data);
 };
 
 //获取用户列表的请求的方法
